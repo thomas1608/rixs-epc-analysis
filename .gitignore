@@ -1,0 +1,19 @@
+# --- Generated output ---
+Figures/
+fit_results/
+
+# --- MATLAB figures & backups ---
+*.fig
+*.asv
+
+# --- Images ---
+*.png
+*.jpg
+*.hdf5
+
+# --- Data files (optional: remove if you WANT to include data) ---
+*.txt
+
+# --- System files ---
+.DS_Store
+Thumbs.db
