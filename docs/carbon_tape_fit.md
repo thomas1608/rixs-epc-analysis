@@ -1,82 +1,32 @@
-\# carbon\_tape\_fit.m
+# carbon_tape_fit.m
 
+Fits the elastic peak of a carbon tape reference spectrum to determine the experimental energy resolution.
 
-
-Fits the elastic peak of a carbon tape reference spectrum to determine experimental energy resolution.
-
-
-
-\---
-
-
-
-\## Purpose
-
-
+## Purpose
 
 Used to extract the instrumental FWHM for use in RIXS fitting.
 
+## Workflow
 
+1. Load HDF5 dataset  
+2. Select elastic peak window  
+3. Fit with:
+   - Gaussian  
+   - Symmetric pseudo-Voigt  
+   - Asymmetric pseudo-Voigt  
+4. Compare fits via R²  
+5. Save figure  
 
-\---
+## Outputs
 
+- Figure:  
+  `Figures/Carbon_tape/carbon_tape_fit_comparison.png`
 
+- Printed values:
+  - FWHM (Gaussian / pseudo-Voigt)
+  - R² values
 
-\## Workflow
+## Notes
 
-
-
-1\. Load HDF5 dataset
-
-2\. Select elastic peak window
-
-3\. Fit with:
-
-&#x20;  - Gaussian
-
-&#x20;  - Symmetric pseudo-Voigt
-
-&#x20;  - Asymmetric pseudo-Voigt
-
-4\. Compare fits via R²
-
-5\. Save figure
-
-
-
-\---
-
-
-
-\## Outputs
-
-
-
-```
-
-\- Figure: Figures/Carbon\_tape/carbon\_tape\_fit\_comparison.png
-
-```
-
-
-
-\- Printed values:
-
-&#x20; - FWHM (Gaussian / PV)
-
-&#x20; - R² values
-
-
-
-\---
-
-
-
-\## Notes
-
-
-
-\- Asymmetric PV is typically most accurate
-
-\- FWHM used in main fitting pipeline
-
+- Asymmetric pseudo-Voigt is typically the most accurate  
+- Extracted FWHM is used in the main fitting pipeline  
