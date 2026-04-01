@@ -9,10 +9,10 @@ fit_results/
 # --- Images ---
 *.png
 *.jpg
-*.hdf5
 
-# --- Data files (optional: remove if you WANT to include data) ---
+# --- Data files
 *.txt
+*.hdf5
 
 # --- System files ---
 .DS_Store

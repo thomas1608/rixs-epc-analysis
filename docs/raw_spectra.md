@@ -20,8 +20,9 @@ For each material and momentum direction:
 
 Input data must be stored in:
 
+```
 hdf5_data/
-
+```
 
 Each dataset is expected to contain multiple scans corresponding to different scattering angles.
 
@@ -31,8 +32,9 @@ Each dataset is expected to contain multiple scans corresponding to different sc
 
 Figures are saved in:
 
+```
 Figures/Raw_spectra/<Material>/<Tag>/
-
+```
 
 Each figure corresponds to a single scattering angle.
 
