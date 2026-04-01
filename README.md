@@ -72,10 +72,15 @@ Run convergence tests:
 convergence_test
 ```
 
+Run carbon tape tests:
+```matlab
+carbon_tape_fit
+```
+
 ---
 
 ## Acknowledgements
 
-This code is based on earlier implementations by Severin Flückiger and Dr. Leonardo Martinelli.
+This code is based on earlier implementations developed by Dr. Leonardo Martinelli and Severin Flückiger.
 
-The present version extends these methods for systematic extraction of electron–phonon coupling from RIXS data.
+The present version extends these methods for the analysis of RIXS data and the extraction of electron–phonon coupling parameters.

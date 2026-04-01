@@ -1,43 +1,45 @@
 # raw_spectra.m
 
+This script generates plots of raw RIXS spectra from HDF5 data for all materials and momentum directions.
+
+---
+
+## Overview
+
+For each material and momentum direction:
+
+1. Load RIXS scans from HDF5 files  
+2. Extract energy loss and intensity  
+3. Apply normalization or background subtraction  
+4. Plot spectra for each scattering angle  
+5. Save figures  
+
+---
+
+## Data
+
+Input data must be stored in:
+
+hdf5_data/
 
 
-Plots raw RIXS spectra from HDF5 files for all materials and momenta.
+Each dataset is expected to contain multiple scans corresponding to different scattering angles.
 
-
-
-## Purpose
-
-Visual inspection of spectra before fitting.
-
-
-
-## Workflow
-
-1. Load HDF5 scans
-
-2. Extract energy and intensity
-
-3. Normalize or subtract background
-
-4. Plot spectra for each angle
-
-5. Save figures
-
-
+---
 
 ## Outputs
 
-- Figures in:
+Figures are saved in:
 
-&#x20; Figures/Raw\_spectra/<Material>/<Tag>/
+Figures/Raw_spectra/<Material>/<Tag>/
 
 
+Each figure corresponds to a single scattering angle.
+
+---
 
 ## Notes
 
-- STO(100) requires background subtraction
-- Other datasets are normalized
-
-
-
+- STO(100) spectra require background subtraction  
+- Other datasets are normalized by a constant factor  
+- Plots are generated with consistent axis limits and formatting
