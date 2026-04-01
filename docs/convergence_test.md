@@ -6,13 +6,25 @@ Tests convergence of intermediate-state cutoffs (m1, m2, m3) in the multi-phonon
 
 
 
+\---
+
+
+
 \## Purpose
+
+
 
 Ensure truncation of phonon sums does not affect computed intensities.
 
 
 
+\---
+
+
+
 \## Workflow
+
+
 
 1\. Define EPC parameters (g1,g2,g3)
 
@@ -26,15 +38,29 @@ Ensure truncation of phonon sums does not affect computed intensities.
 
 
 
+\---
+
+
+
 \## Outputs
+
+
 
 \- Figures in:
 
-&#x20; Figures/Convergence\_test/
+
+
+```
+
+Figures/Convergence\_test/
+
+```
 
 
 
 Each plot shows:
+
+
 
 \- Channel contributions
 
@@ -44,7 +70,13 @@ Each plot shows:
 
 
 
+\---
+
+
+
 \## Notes
+
+
 
 \- Convergence depends on g
 

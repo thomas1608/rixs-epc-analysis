@@ -6,13 +6,25 @@ Fits the elastic peak of a carbon tape reference spectrum to determine experimen
 
 
 
+\---
+
+
+
 \## Purpose
+
+
 
 Used to extract the instrumental FWHM for use in RIXS fitting.
 
 
 
+\---
+
+
+
 \## Workflow
+
+
 
 1\. Load HDF5 dataset
 
@@ -32,9 +44,21 @@ Used to extract the instrumental FWHM for use in RIXS fitting.
 
 
 
+\---
+
+
+
 \## Outputs
 
+
+
+```
+
 \- Figure: Figures/Carbon\_tape/carbon\_tape\_fit\_comparison.png
+
+```
+
+
 
 \- Printed values:
 
@@ -44,7 +68,13 @@ Used to extract the instrumental FWHM for use in RIXS fitting.
 
 
 
+\---
+
+
+
 \## Notes
+
+
 
 \- Asymmetric PV is typically most accurate
 

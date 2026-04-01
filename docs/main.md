@@ -96,7 +96,11 @@ The intensity is computed via the function:
 
 
 
+```
+
 I(n1,n2,n3,...)
+
+```
 
 
 
@@ -120,9 +124,13 @@ Saved in (generated automatically):
 
 
 
+```
+
 Figures/
 
 Figures/Elastic\_subtracted/
+
+```
 
 
 
@@ -170,25 +178,49 @@ The script generates tables containing:
 
 
 
+```
+
 \- completeFit\_threePhonons
+
+```
+
+
 
 &#x20; Performs nonlinear least-squares fitting
 
 
 
+```
+
 \- I(...)
+
+```
+
+
 
 &#x20; Computes multi-phonon scattering intensity
 
 
 
+```
+
 \- pseudoVoigtAsymmetric
+
+```
+
+
 
 &#x20; Models peak shapes
 
 
 
+```
+
 \- two\_theta\_to\_rlu
+
+```
+
+
 
 &#x20; Converts scattering angle to momentum transfer
 
