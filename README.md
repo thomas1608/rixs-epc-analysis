@@ -2,7 +2,9 @@
 
 This repository contains MATLAB code for the analysis of resonant inelastic x-ray scattering (RIXS) spectra to extract mode-resolved electron–phonon coupling (EPC) in SrTiO3 and KTaO3.
 
-The approach is based on multi-phonon modeling of RIXS spectra using externally determined phonon energies.
+The implementation is based on multi-phonon modeling of RIXS spectra using externally determined phonon energies.
+
+This work was carried out at the Laboratory for Quantum Matter Research (LQMR), University of Zurich, under the supervision of Prof. Dr. Johan Chang.
 
 ---
 
@@ -79,8 +81,24 @@ carbon_tape_fit
 
 ---
 
+## Associated Thesis
+
+This repository accompanies the Master's thesis:
+
+**"Quantifying Electron-Phonon Coupling in SrTiO₃ and KTaO₃ via Infrared and Resonant Light Spectroscopy"**  
+University of Zurich, 2026
+
+The thesis provides the full theoretical background, implementation details, and analysis methodology used in this codebase.
+
+A copy is included in:
+```
+thesis/
+```
+
+---
+
 ## Acknowledgements
 
-This code is based on earlier implementations developed by Dr. Leonardo Martinelli and Severin Flückiger.
+These functions are based on original implementations developed by Dr. Leonardo Martinelli and Severin Flückiger.
 
 The present version extends these methods for the analysis of RIXS data and the extraction of electron–phonon coupling parameters.
