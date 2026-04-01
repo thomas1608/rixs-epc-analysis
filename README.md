@@ -1,121 +1,81 @@
-\# RIXS EPC Analysis (SrTiO$\_3$ and KTaO$\_3$)
+# RIXS EPC Analysis (SrTiO3 and KTaO3)
 
+This repository contains MATLAB code for the analysis of resonant inelastic x-ray scattering (RIXS) spectra to extract mode-resolved electron–phonon coupling (EPC) in SrTiO3 and KTaO3.
 
+The approach is based on multi-phonon modeling of RIXS spectra using externally determined phonon energies.
 
-This repository contains MATLAB code used to analyze resonant inelastic x-ray scattering (RIXS) data in order to extract mode-resolved electron–phonon coupling (EPC) in SrTiO$\_3$ and KTaO$\_3$.
+---
 
-
-
-The analysis combines multi-phonon fitting of RIXS spectra with externally determined phonon energies, enabling the extraction of coupling strengths as a function of momentum.
-
-
-
-\---
-
-
-
-\## Overview
-
-
+## Overview
 
 The workflow consists of:
 
+1. Visualization of raw RIXS spectra  
+2. Multi-phonon fitting of spectra  
+3. Extraction of coupling constants (g) and EPC strengths (M)  
+4. Convergence testing of intermediate-state cutoffs  
+5. Calibration of the elastic line using carbon tape  
 
+---
 
-1\. Extraction and visualization of raw RIXS spectra  
+## Repository Structure
 
-2\. Multi-phonon fitting of spectra to obtain EPC parameters  
+- `main.m`  
+  Main analysis script. Performs multi-phonon fitting and extracts EPC parameters.  
+  See: `MAIN_README.md`
 
-3\. Convergence testing of intermediate-state cutoffs  
+- `raw_spectra.m`  
+  Generates plots of raw RIXS spectra.  
+  See: `raw_spectra_README.md`
 
-4\. Calibration of the elastic line using carbon tape measurements  
+- `convergence_test.m`  
+  Tests convergence of intermediate-state cutoffs.  
+  See: `convergence_test_README.md`
 
+- `carbon_tape_fit.m`  
+  Determines experimental resolution via elastic peak fitting.  
+  See: `carbon_tape_fit_README.md`
 
+- `functions/`  
+  Contains material-specific multi-phonon fitting functions.
 
-\---
+---
 
+## Data
 
-
-\## File Structure
-
-
-
-\- `main.m`  
-
-&#x20; Main analysis script. Performs multi-phonon fitting of RIXS spectra and extracts EPC parameters.
-
-
-
-\- `raw\_spectra.m`  
-
-&#x20; Plots raw RIXS spectra from HDF5 files for all measured momenta.
-
-
-
-\- `convergence\_test.m`  
-
-&#x20; Tests convergence of intermediate-state cutoffs ($m\_1$, $m\_2$, $m\_3$) used in the multi-phonon model.
-
-
-
-\- `carbon\_tape\_fit.m`  
-
-&#x20; Fits the elastic peak using Gaussian and pseudo-Voigt models to determine the experimental resolution.
-
-
-
-\- `functions/`
-
-&#x20; - `fitting\_function\_threePhonons\_STO110.m`  
-
-&#x20; - `fitting\_function\_threePhonons\_KTO110.m`  
-
-&#x20; Core fitting routines for STO and KTO datasets.
-
-
-
-\---
-
-
-
-\## Data
-
-
-
-The raw experimental data (HDF5 files) are \*\*not included\*\* in this repository.
-
-
+Experimental HDF5 data are not included.
 
 To run the analysis, data must be placed in:
 
-
-
-hdf5\_data/
-
-
+```
+hdf5_data/
+```
 
 Access to the data can be requested from the original authors.
 
+---
 
+## Usage
 
-\---
+Run main analysis:
+```matlab
+main
+```
 
+Plot raw spectra:
+```matlab
+raw_spectra
+```
 
-
-\## Usage
-
-
-
-Run the main analysis: main  
-
-Plot raw spectra: raw\_spectra  
-
-Run convergence tests: convergence\_test
+Run convergence tests:
+```matlab
+convergence_test
+```
 
 ---
 
 ## Acknowledgements
 
-This code is based on earlier implementations developed by Severin Flückiger and Dr. Leonardo Martinelli.
+This code is based on earlier implementations by Severin Flückiger and Dr. Leonardo Martinelli.
 
-The present version was extended and adapted for the analysis of RIXS data and extraction of electron–phonon coupling parameters.
+The present version extends these methods for systematic extraction of electron–phonon coupling from RIXS data.
