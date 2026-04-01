@@ -26,15 +26,15 @@ The workflow consists of:
 
 - `raw_spectra.m`  
   Generates plots of raw RIXS spectra.  
-  See: `[raw_spectra_README.md](docs/raw_spectra_README.md)`
+  See: [raw_spectra_README.md](docs/raw_spectra_README.md)
 
 - `convergence_test.m`  
   Tests convergence of intermediate-state cutoffs.  
-  See: `[convergence_test_README.md](docs/convergence_test_README.md)`
+  See: [convergence_test_README.md](docs/convergence_test_README.md)
 
 - `carbon_tape_fit.m`  
   Determines experimental resolution via elastic peak fitting.  
-  See: `[carbon_tape_fit_README.md](docs/carbon_tape_fit_README.md)`
+  See: [carbon_tape_fit_README.md](docs/carbon_tape_fit_README.md)
 
 - `functions/`  
   Contains material-specific multi-phonon fitting functions. These are the original base functions provided by Dr. Leonardo Martinelli and Severin Fluckiger.
