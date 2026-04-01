@@ -50,5 +50,3 @@ Each plot shows:
 
 \- Typical values: m \~ 40–100
 
-
-

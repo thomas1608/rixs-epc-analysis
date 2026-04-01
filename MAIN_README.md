@@ -18,15 +18,15 @@ For each material (KTO, STO), momentum direction, and scattering angle:
 
 
 
-1\. Load spectra from HDF5  
+1\. Load spectra from HDF5
 
-2\. Preprocess intensity (normalization or background subtraction)  
+2\. Preprocess intensity (normalization or background subtraction)
 
-3\. Fit multi-phonon model  
+3\. Fit multi-phonon model
 
-4\. Extract coupling constants  
+4\. Extract coupling constants
 
-5\. Save figures and results  
+5\. Save figures and results
 
 
 
@@ -42,31 +42,31 @@ Defined in the configuration section of the script:
 
 
 
-\- phononE  
+\- phononE
 
 &#x20; Phonon energies (eV)
 
 
 
-\- p0  
+\- p0
 
 &#x20; Initial fit parameters
 
 
 
-\- lb, ub  
+\- lb, ub
 
 &#x20; Lower and upper parameter bounds
 
 
 
-\- fwhm, mu  
+\- fwhm, mu
 
 &#x20; Experimental resolution and pseudo-Voigt mixing
 
 
 
-\- anglesDeg  
+\- anglesDeg
 
 &#x20; List of scattering angles
 
@@ -120,9 +120,9 @@ Saved in:
 
 
 
-Figures/  
+Figures/
 
-Figures/Elastic\_subtracted/  
+Figures/Elastic\_subtracted/
 
 
 
@@ -130,11 +130,11 @@ For each dataset:
 
 
 
-\- Full fit (including elastic peak)  
+\- Full fit (including elastic peak)
 
-\- Elastic-subtracted spectrum  
+\- Elastic-subtracted spectrum
 
-\- Individual phonon contributions  
+\- Individual phonon contributions
 
 
 
@@ -150,13 +150,13 @@ The script generates tables containing:
 
 
 
-\- Coupling constants g1, g2, g3  
+\- Coupling constants g1, g2, g3
 
-\- EPC strengths M1, M2, M3 (meV)  
+\- EPC strengths M1, M2, M3 (meV)
 
-\- 95% confidence intervals  
+\- 95% confidence intervals
 
-\- Fit residuals  
+\- Fit residuals
 
 
 
@@ -168,25 +168,25 @@ The script generates tables containing:
 
 
 
-\- completeFit\_threePhonons  
+\- completeFit\_threePhonons
 
 &#x20; Performs nonlinear least-squares fitting
 
 
 
-\- I(...)  
+\- I(...)
 
 &#x20; Computes multi-phonon scattering intensity
 
 
 
-\- pseudoVoigtAsymmetric  
+\- pseudoVoigtAsymmetric
 
 &#x20; Models peak shapes
 
 
 
-\- two\_theta\_to\_rlu  
+\- two\_theta\_to\_rlu
 
 &#x20; Converts scattering angle to momentum transfer
 
@@ -200,11 +200,11 @@ The script generates tables containing:
 
 
 
-\- STO(100) requires background subtraction  
+\- STO(100) requires background subtraction
 
-\- Elastic width can vary depending on dataset  
+\- Elastic width can vary depending on dataset
 
-\- Fit stability depends on initial parameters  
+\- Fit stability depends on initial parameters
 
 
 
@@ -229,6 +229,4 @@ On the order of seconds per spectrum, depending on convergence.
 
 
 This script extracts mode-resolved electron–phonon coupling from RIXS spectra by fitting the full multi-phonon response.
-
-
 

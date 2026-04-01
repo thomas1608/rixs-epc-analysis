@@ -50,5 +50,3 @@ Used to extract the instrumental FWHM for use in RIXS fitting.
 
 \- FWHM used in main fitting pipeline
 
-
-

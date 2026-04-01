@@ -1,4 +1,4 @@
-\# raw\_spectra.m
+# raw_spectra.m
 
 
 
@@ -6,39 +6,38 @@ Plots raw RIXS spectra from HDF5 files for all materials and momenta.
 
 
 
-\## Purpose
+## Purpose
 
 Visual inspection of spectra before fitting.
 
 
 
-\## Workflow
+## Workflow
 
-1\. Load HDF5 scans
+1. Load HDF5 scans
 
-2\. Extract energy and intensity
+2. Extract energy and intensity
 
-3\. Normalize or subtract background
+3. Normalize or subtract background
 
-4\. Plot spectra for each angle
+4. Plot spectra for each angle
 
-5\. Save figures
+5. Save figures
 
 
 
-\## Outputs
+## Outputs
 
-\- Figures in:
+- Figures in:
 
 &#x20; Figures/Raw\_spectra/<Material>/<Tag>/
 
 
 
-\## Notes
+## Notes
 
-\- STO(100) requires background subtraction
-
-\- Other datasets are normalized
+- STO(100) requires background subtraction
+- Other datasets are normalized
 
 
 
