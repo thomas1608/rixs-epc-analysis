@@ -22,7 +22,7 @@ The workflow consists of:
 
 - `main.m`  
   Main analysis script. Performs multi-phonon fitting and extracts EPC parameters.  
-  See: `[main.md](docs/main.md)`
+  See: [main.md](docs/main.md)
 
 - `raw_spectra.m`  
   Generates plots of raw RIXS spectra.  
